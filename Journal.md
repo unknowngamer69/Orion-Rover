@@ -26,3 +26,10 @@ Today things were nice and good actually, first i did changes in height of whole
 **Total time spent: 2 Hours 30 minutes**
 ![Rover Base](https://cdn.hackclub.com/01a0d448-fcd5-794e-8b6e-031ce5ccade6/image.png)
 ![Camera Mount](https://cdn.hackclub.com/01a0d44d-6789-73ad-89ac-9dc6645710a7/image.png)
+
+## 25-09-2026 Completed length side holes for ports
+
+Today this were little messed up lol, i started with making Camera mount, after it was 90% completed i was playing around with model and then i realised wtf, i made champher wrong side and camera will be facing down rather than up :skull-emoji, so i had to do those things again, and this time it took less time that i did first time, maybe 50% or less than that less time than doing it first time. After that i made a hole in main base for camera mount region so wire could go here and there, then i made camera and sensor thing at back down so rover don't bump anything or fall from behind in backward direction, after that i also spent time for deciding light at top camera so rover can see my handsome face even at night. Camera mount part was little challenging for me today. Also i forgot to share yesterday that I learned about Hollow tool. That's it for today.
+**Total time spent: 2 Hours**
+![Rover Base](https://cdn.hackclub.com/01a0d7f6-2c89-7da9-ab36-40dcc428cd2a/image.png)
+![Camera Mount](https://cdn.hackclub.com/01a0d7f5-c9c0-7b67-ace8-aa13c722c780/image.png)
