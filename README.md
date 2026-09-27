@@ -24,7 +24,7 @@ The Main Base is the main body(Most Obvious Thing) of the rover that holds the e
 - **Lighting System:** Cutouts for 2 front lights and 2 Front bottom lights and 2 Back bottom lights so the rover can see and be seen in the dark.
 - **Easy Assembly:** It will require heat-set screw mounts and wire pass-through holes to keep cables neat and connect easily to the other parts.
 
-![Main Base Latest](https://cdn.hackclub.com/01a0e383-1004-7790-a395-16e335f739ec/1000145295.jpg)
+![Main Base Latest](https://cdn.hackclub.com/01a0e3ac-b188-75cb-807e-f3d0fdd09a32/1000145303.jpg)
 
 ### 2. Lower Base
 Now Lower Base sits underneath the Main Base and holds Motors that Move the Rover
