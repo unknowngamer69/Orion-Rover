@@ -33,3 +33,12 @@ Today this were little messed up lol, i started with making Camera mount, after 
 **Total time spent: 2 Hours**
 ![Rover Base](https://cdn.hackclub.com/01a0d7f6-2c89-7da9-ab36-40dcc428cd2a/image.png)
 ![Camera Mount](https://cdn.hackclub.com/01a0d7f5-c9c0-7b67-ace8-aa13c722c780/image.png)
+
+
+
+## 27-09-2026 Completed length side holes for ports
+
+Well well, if you have read thus far, you might notice i skipping 26th September, but umm that's wrong i actually did more than 1 hours yesterday but i was busy more in house chores, anyways, today i finally figured out the lower base, motor and things regarding it, It was literally like hell, like i have seem rovers, cars and all too much but still i was confused what to implement, how to implement, what to make and what not to, then at the end i decided to first complete little things in main base, after doing that at Night i finally figured out what to do with lower base, then i made base of lower base, tgen did alot of reserach on what motor to use bcz i wanted a programically controllable motor, not to big but powerful enough to withstand heavy weight, and finally i got one and interesting part was its dimensions were clear so i made things for it, added screw things to attach main base and lower base and a hole for wires to pass. And thats it we are done for week 2, In week 3, I woukd start with Top/lid part, in between sections and compartments of main base and then RC of Rover and also Software thungs for it Yay my favourite thing
+**Total time spent: 2 Hours**
+![Rover Base](https://cdn.hackclub.com/01a0e383-1004-7790-a395-16e335f739ec/1000145295.jpg)
+![Lower Base](https://cdn.hackclub.com/01a0e383-0c31-7859-8b82-950c300ab86f/1000145294.jpg)
