@@ -5,6 +5,8 @@ description: "Orion is a four-wheeled autonomous rover built around a custom Lin
 created_at: "22-09-2026 (DD/MM/YYYY) [Come on whole world uses this format not some weird American Format of mm/dd/yyyy and this is used throughout my project"
 ---
  
+Time Spent- 10.5 Hours
+
 
 ## 22-09-2026 Completed length side holes for ports
 
