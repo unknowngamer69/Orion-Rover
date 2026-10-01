@@ -44,3 +44,14 @@ Well well, if you have read thus far, you might notice i skipping 26th September
 **Total time spent: 2 Hours**
 ![Rover Base](https://cdn.hackclub.com/01a0e383-1004-7790-a395-16e335f739ec/1000145295.jpg)
 ![Lower Base](https://cdn.hackclub.com/01a0e383-0c31-7859-8b82-950c300ab86f/1000145294.jpg)
+
+
+## 01-10-2026 Completed Wheel and 60% Main-Top
+
+umm hmm, so you might be thinking where the hell i was since last 3 days (if you really thought that, thanks for thinking about this i know i am very charismatic, anyways) So i was busy in preparation for one of my test, alr enough pf side talk lets get back to our jornal for today, so basically i was confused af about making my wheel, why extruding thungs for middle triangular things, i wasn't able to Extrude-Remove Solid, i was angry about it af, so i asked this problem in #thirdspace and #atlantis, a guy from Atlantis was helping me but takinh too time till then a guy from #thirdspace helped me, i gave him access to thw onshape doc and he eventually fix it, if you wonder why i didn't tool help of AI so tbh i took its help but it wasn't helpful, and that guy topd me onshape don't let ypu extrude things with common vertices, so he just added a circle in middle and it got fixed, then after that it looked ugly so i increased radius of internal circle and it looked good, then i added fillets and champher to those things, then i realised that i can't bend inwards from.middle for the outer cylindrical height part of wheel and i ended up discovering new feaures lol, so i just suppressed those triangular holes things and fillets and champhers and made 1 part of 10mm used bl3nd tool at top, then at top i drew another circle of 10 mm and blended it in same way and then blended both priorly blended thing, and finally got desired curvy shape i wanted, then added those triangular holes again and added hole in it again. After this i made screw things in main base, ans made main top and made screw things in it as well, and then i researched about LiDAR again as previous one was ugly, big and not that good. Now will make mounting thing for LiDAR tommorow with a hole for it, that's it for Today
+**Total time spent: 2 Hours**
+![Rover Base](https://cdn.hackclub.com/01a0f763-88c0-7265-b4f3-da9dc8cfb45f/img_20261001_174214.jpg)
+![Top Base](https://cdn.hackclub.com/01a0f764-6d6e-7c0e-a254-7d45738a3585/1000146073.jpg)
+![Top Base](https://cdn.hackclub.com/01a0f764-6f71-733d-80c3-3ef34958b6ad/1000146074.jpg)
+![Wheel](https://cdn.hackclub.com/01a0f763-cce0-77b8-b2f6-f52862c305ba/1000146072.jpg
+)
