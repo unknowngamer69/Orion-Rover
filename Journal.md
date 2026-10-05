@@ -53,5 +53,22 @@ umm hmm, so you might be thinking where the hell i was since last 3 days (if you
 ![Rover Base](https://cdn.hackclub.com/01a0f763-88c0-7265-b4f3-da9dc8cfb45f/img_20261001_174214.jpg)
 ![Top Base](https://cdn.hackclub.com/01a0f764-6d6e-7c0e-a254-7d45738a3585/1000146073.jpg)
 ![Top Base](https://cdn.hackclub.com/01a0f764-6f71-733d-80c3-3ef34958b6ad/1000146074.jpg)
-![Wheel](https://cdn.hackclub.com/01a0f763-cce0-77b8-b2f6-f52862c305ba/1000146072.jpg
-)
+![Wheel](https://cdn.hackclub.com/01a0f763-cce0-77b8-b2f6-f52862c305ba/1000146072.jpg)
+
+
+## 02-10-2026 Completed Wheel and 60% Main-Top
+So Today Things we quite interesting bcz i did literally alot of things today, So firstly what i did is that first i opened the pdf of dimensions of the LiDAR sensor and then as per those dimesnions i made a cutout for the LiDAR to come out of roer like it will be always be out then i made screws for it and again for this too we will use screw nut things instead of the mounted boss things then researched about mics we will be using then after alot of research and thinking (my single brain neuron+AI) decided that we will be using 4 small microphones on all 4 sides, this will enable us to get somewhat approx position of the person who is speaking or giving commands and also we would be able to give good and clear commands from all 4 side :evil-emoji . Now after this i started doing research for speaker we will use and it was really easy to find a good perfect one speaker for our project. So uhh now it came to me its position :sus-emoji (idk why i am doing this today :cryin) so i have seen TV and many other applicant like monitor(even thugh both are 99% same) which has speaker on 2 sides, Left and Right side and even also in sound editing software and website i have seen editing option as left or right so i thought there miight be something universal with sound for Left and Right and stereo means both ig???. Anyways so i made 2 speaker holes in desgn obviously at left and right in top Base, and then after that inside the base i made structure position to keep these speakers. After all of these i remembered i have to make a holding back structure for Lower-Base motors, now here comes interesting part, i first though of a solution and tbh its my first and great solution, but doing that was somewhat complex, not hard i knew what to do but kinda complex and time taking(i should felt happy about this but uhh idk why i didn't felt happy if it took more time lol) anyways then while doing things for 1 motor holder an idea or you can say 2nd way of doing same thing that seemed more simple, properly structured and processed, so i did in that way lol, mb i learnt doing same thing in 2 way, 1 complex unprocessed straight forward thinking, and 1 more simple, structured and quite processed. Anyways i was not able to complete this thing for both sides did for 1 sides of motors but needed to stop half way while i was doing for 2nd side bcz i was getting late for tutions. Anyways that it for Today Bye
+
+**Total time spent: 2 Hours 30 Minutes**
+![Top Base](https://cdn.hackclub.com/01a10989-7572-7289-be5d-8a089724150c/image.png)
+![Lower-Base](https://cdn.hackclub.com/01a1098a-910a-7ceb-8dfa-a5b1984a4e3d/image.png)
+
+
+## 03-10-2026 V1 of Rover is 100% complete
+So i started today with completing Lower base that i left yesterday lol, then after doing that i started researching for a fan that will keep rover cool like me, so after literally alot of research i confirmed a fan and just as i did for speakers i did same thing for fan but different size obviously and fater this fan thing was done there comes a mojor problem, battery!! yeah like things we planned for Rover was only possible with a big battery so i first researched alot, alot and alot for best powerful but small cute battery and after research was done i confirmed it with my teammate and he approved it bcz he is doing electronic so obviously yes. I wanted to do batteryt hing bcz as per it i will be making2 floor sections in Rover 1st floor of Rover will have battery so knowing dimension of battery was important to know where to keep 2nd floor, so for floors i first made 1 floor with no support structure for it bcz i realised the campher i made at lower part of main base is good enough to hold battery and other thing thing without going inside, after that i made supporting structure for floor 2 and floor 2 itselft and then i made holes in them at backso that wires could pass and that's how thngs were done today.
+
+**Total time spent: 2 Hours 30 Minutes**
+![Main Base](https://cdn.hackclub.com/01a109a5-fe99-75e6-9e81-066414df0262/screenshot_2026-10-05_065009.png)
+![1st Floor](https://cdn.hackclub.com/01a109a5-b07f-7427-a04d-d53195340ec5/screenshot_2026-10-05_064923.png)
+![2nd Floor](https://cdn.hackclub.com/01a109a5-d2a0-76b6-8975-f39b21183868/screenshot_2026-10-05_064950.png)
+
