@@ -1,65 +1,86 @@
-#  Rover: Orion
+# Rover: Orion
 
-Orion is an autonomous rover built for exploration, robotics, and smart navigation and Most Importantly, FUN!!!!
+**Orion** is an AI-Powered rover built for exploration, robotics, ane mainly for Funn!!!
 
-This is a group project made by my Team Big Brains:
-- **Krish(Me)** designed the 3D body and mechanical parts (**CAD**).
+This is a group project made by:
+- **Krish** designed the 3D body and mechanical parts (**CAD** & **Web UI**).
 - **Shaurya** designed the custom brain and electronics (**GREG SBC & Motor Driver**).
-
  **Electronics Repository (GREG):** [github.com/GoTouchGra55/GREG](https://github.com/GoTouchGra55/GREG)  
  **CAD Repository (Orion Rover):** [github.com/unknowngamer69/Orion-Rover](https://github.com/unknowngamer69/Orion-Rover)
 
 ---
 
-## What I Have Built So Far:
+## What We Have Built So Far (CAD, Body & Software)
 
-Currently, the outer shell and structural parts of the rover are divided into three main parts: Main Base, Lower Base, and Camera Mount.
+The **V1 CAD design is now 100% complete! yay** The outer shell and structural parts of the rover are divided into these sections:
 
-### 1. Main Base
-The Main Base is the main body(Most Obvious Thing) of the rover that holds the electronics, screen, lights, and sensors.
-- **It has Smart Shape & Smooth Edges:** Designed using chamfers and fillets for a clean, cool look and hollowed out on the inside to hold all the electronics things.
-- **It also has Front & Rear Low Cameras:** It has cutouts for small 2MP cameras at the front and back to spot small obstacles that comes below height Main Rover.
-- **Cool thing - Cliff & Bump Sensors:** Includes cutouts for distance sensors (ToF) at the front, back, and corners. These stop the rover from bumping into walls or falling off edges (like a table).
-- **5-Inch Screen Mount:** Holds a 5" non-touch LCD screen on the body (tjat would be controlled using the rover's RC).
-- **Lighting System:** Cutouts for 2 front lights and 2 Front bottom lights and 2 Back bottom lights so the rover can see and be seen in the dark.
-- **Easy Assembly:** It will require heat-set screw mounts and wire pass-through holes to keep cables neat and connect easily to the other parts.
+### 1. Main Base & Internal Floors
+The Main Base is the main body of the rover(obviously) that holds the electronics, screen, lights, and sensors.
+- **Cool Shape & Smooth Edges:** Designed using chamfers and fillets for a clean, cool look.
+- **2 Floor System:** The inside is divided into two floors. **Floor 1** is fixed on lower chamfers and will hold a large, powerful battery and main components and PCB, **Floor 2** has side support structures to hold the Top electronics part. Both floors has circular cutouts for easy wire routing.
+- **Sensors & Cameras:** Includes cutouts for down-faced 2MP cameras (front & rear) and distance sensors (ToF) on the corners to prevent falling or crashinh into walls and objects.
+- **5-Inch Screen Mount:** Holds a 5" non-touch LCD screen on the body.
+- **Lighting System:** Cutouts for 2 front lights and 2 bottom lights at front and back 6 lighgs jn totoal and 1 light extra near camera.
+- **Cooling Fan:** A dedicated mounting spot for a cooling fan to keep the internals from overheating.
 
-![Main Base Latest](https://cdn.hackclub.com/01a0e3ac-b188-75cb-807e-f3d0fdd09a32/1000145303.jpg)
+### 2. Main-Top (Lid)
+The top cover encloses the rover and has crucial sensory and audio sensors.
+- **LiDAR Mount:** A cutout and screw-nut mounting system for a LiDAR sensor that sits exposed on top of the rover.
+- **Spatial Audio (4 Mics):** This has four small microphones (one on each side) to accurately detect the direction of voice commands.
+- **Stereo Speakers:** Includes Left and Right speaker cutouts with internal support structures for audio.
 
-### 2. Lower Base
-Now Lower Base sits underneath the Main Base and holds Motors that Move the Rover
-- **Motor Mounts:** It is Designed to hold DC motors.
-- **Clean Wiring & Screw Holes:** Includes dedicated hole for passing motor wires up to the Main Base and screw mounts to bind Upper and Lower bases together tightly.
+### 3. Lower Base & Wheels
+The Lower Base is screwed underneath the Main Base and handles movement.
+- **Motor Mounts:** Has simplified, strong structural holders for DC motors, 2 on both sides.
+- **Custom Wheels:** Uniquely designed curved wheels having a custom blended 3D shape with triangular cutout for aesthetics and weight reduction.
+- **Clean Wiring & Assembly:** Includes holes for passing motor wires up into the Main Base and screw mounts to fix the Upper and Lower bases together.
 
-![Lower Base](https://cdn.hackclub.com/01a0e383-0c31-7859-8b82-950c300ab86f/1000145294.jpg)
+### 4. Top Camera Mount
+- Holds the primary USB camera angled upward (for seeing faces of ita handsome creators lol) and a night light above it, with wires hidden inside its internal part.
 
-### 3. Top Camera Mount
-The Camera Mount fits on top of the Main Base and its main ourpose is to hold Primary Camera and Primary Lights that would enable Rover to see Handsome Faces of its creators
-- **Primary USB Camera:** It holds the main USB camera which is angled to look up and ahead.
-- **Night Light:** Includes a mount for a bright Primary light right next to the top camera so it can see clearly at night.
-- **Hidden Wires:** It also has an internal space and matching hole in the Main Base so the camera and light wires stay hidden inside the body.
-
-![Camera Mount](https://cdn.hackclub.com/01a0d7f5-c9c0-7b67-ace8-aa13c722c780/image.png)
+### 5. Web Interface (Software)
+- **HTML Web App:** A browser-based control panel to log into the rover.
+- **Features:** Live camera feed viewing, remote movement control via arrow keys, and the ability to change the rover's digital face/emotions on the screen.
 
 ---
 
+## Electronics: Meet GREG
 
-## Plan for Next week(To-Do)
+The rover is powered by **GREG**, a custom Single Board Computer (SBC) and Motor Driver system designed from scratch by Shaurya.
+
+### Main Computer (GREG SBC)
+- **Processor (SoC):** Allwinner T527
+- **RAM:** 2 GB Samsung LPDDR4
+- **Power Management:** AXP717-family PMIC
+- **Storage:** MicroSD card slot
+- **Ports & Networking:** Ethernet, 2× USB-A, 1× USB-C
+- **Display Support:** HDMI + 5" LCD interface
+- **Cameras:** Supports up to 3 cameras (2 with multiplexing)
+- **Sensors:** 6× ToF (Time-of-Flight) distance sensors + LiDAR
+
+### Motor Driver Board
+- **Microcontroller (MCU):** STM32G4
+- **Motor Drivers:** 3× DRV8262
+- **Motors:** Supports 6× brushed DC motors with built-in encoders
+
+---
+
+##  To-Do next:
 
 - [x] Main Base CAD Design
 - [x] Lower Base & Motor Mounts CAD Design
 - [x] Top Camera Mount CAD Design
+- [x] Wheels & Main-Top (Lid) CAD Design
+- [x] Internal Compartments (Battery & Electronics Floors)
 - [x] GREG SBC & Motor Driver Schematics
-- [ ] Top Cover / Lid for the Rover
-- [ ] Internal Compartments & Dividers inside the Main Base
-- [ ] Custom Remote Controller (RC) Design
+- [x] Initial Web UI (Camera, Movement, Emotion Control)
 - [ ] PCB Routing for GREG
-- [ ] Rover Software & Autonomous Navigation
+- [ ] Physical Assembly & Printing
+- [ ] Full Autonomous Navigation Software
 
 ---
 
 ## Credits & Authors
 
-- **Krish (CAD, 3D Design & Component Research)** – [@unknowngamer69](https://github.com/unknowngamer69)
+- **Krish (CAD, 3D Design, Web UI & Component Research)** – [@unknowngamer69](https://github.com/unknowngamer69)
 - **Shaurya (Electronics & Custom GREG SBC)** – [@GoTouchGra55](https://github.com/GoTouchGra55)
-- 
