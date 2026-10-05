@@ -5,7 +5,7 @@ description: "Orion is a four-wheeled autonomous rover built around a custom Lin
 created_at: "22-09-2026 (DD/MM/YYYY) [Come on whole world uses this format not some weird American Format of mm/dd/yyyy and this is used throughout my project"
 ---
  
-Time Spent- 10.5 Hours
+Time Spent- 20.5 Hours
 
 
 ## 22-09-2026 Completed length side holes for ports
@@ -71,4 +71,10 @@ So i started today with completing Lower base that i left yesterday lol, then af
 ![Main Base](https://cdn.hackclub.com/01a109a5-fe99-75e6-9e81-066414df0262/screenshot_2026-10-05_065009.png)
 ![1st Floor](https://cdn.hackclub.com/01a109a5-b07f-7427-a04d-d53195340ec5/screenshot_2026-10-05_064923.png)
 ![2nd Floor](https://cdn.hackclub.com/01a109a5-d2a0-76b6-8975-f39b21183868/screenshot_2026-10-05_064950.png)
+
+
+## 04-10-2026 HTML website for using and loggin it 100% done
+
+Shalom! (saying this purposefully to raige bait some readers) Well Today what i did was quite amazing, i don't know if we have to write journal for Software part but uhh i thought i shoukd write it otherwise thungs would look confusing and kinda incomplete without wrirting for Software part. So well today what i did was that i completed web thing for rover, now what does this mean is that now using web we can basically kinda log on rover!! yes like this is a planed feature i just made the web things for now with some mock things lol, Now using web we can see through camera what rover is seeing, control via arrow keys to control it, control its faces and umm you can emotions ig? or mb face expressipn, anyways inlove controlling things :).  That's it for today, btw uhh you might think i didn't journal for last 2 days, but that's wrong i actually did, i just didn't commit thqg was my bad and also if you thing why journaling today took more time, then it took more time bcz i forgot to do Ctrl+S yester after writing journal so things vanished and i have to re-write yesterday's Things. Alr bye....
+**Total time spent: 2 Hours 30 Minutes*
 
