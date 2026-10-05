@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ORION Control Center</title>
+    <style>
+      body {
+        font-family: system-ui;
+        background: #080d18;
+        color: #eaf0ff;
+        margin: 0;
+      }
+      .wrap {
+        max-width: 1400px;
+        margin: auto;
+        padding: 20px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 16px;
+      }
+      .card {
+        background: #111a2b;
+        border: 1px solid #263653;
+        border-radius: 14px;
+        padding: 16px;
+      }
+      .camera {
+        width: 100%;
+        background: #000;
+        border-radius: 10px;
+        min-height: 360px;
+        object-fit: contain;
+      }
+      .face {
+        height: 260px;
+        display: grid;
+        place-items: center;
+        font-size: 100px;
+        background: #0b1220;
+        border-radius: 12px;
+      }
+      .row {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      button {
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 1px solid #33445f;
+        background: #1b2942;
+        color: #fff;
+        cursor: pointer;
+      }
+      button.danger {
+        background: #8b2020;
+      }
+      .logs {
+        height: 260px;
+        overflow: auto;
+        background: #050912;
+        padding: 10px;
+        font-family: monospace;
+        white-space: pre-wrap;
+      }
+      .kv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+      }
+      .pill {
+        padding: 4px 8px;
+        border-radius: 999px;
+        background: #223452;
+      }
+      .emotion {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 6px;
+      }
+      .emotion button {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>ORION Rover Control Center</h1>
+      <div class="grid">
+        <div>
+          <div class="card">
+            <h2>Vision</h2>
+            <img class="camera" src="/camera/stream">
+          </div>
+          <div class="card">
+            <h2>Control</h2>
+            <div class="row">
+              <button class="danger" onclick="post('/stop')">EMERGENCY STOP</button>
+              <button onclick="post('/reset-stop')">Reset stop</button>
+              <button onclick="snapshot()">Snapshot</button>
+              <button onclick="ai()">Send AI command</button>
+            </div>
+          </div>
+          <div class="card">
+            <h2>Emotional face</h2>
+            <img id="face" class="face" src="/face.svg" alt="ORION face">
+            <div class="emotion">
+              <button onclick="face('happy')">😊</button>
+              <button onclick="face('sad')">😢</button>
+              <button onclick="face('angry')">😡</button>
+              <button onclick="face('surprised')">😮</button>
+              <button onclick="face('thinking')">🤔</button>
+              <button onclick="face('sleeping')">😴</button>
+              <button onclick="face('listening')">👂</button>
+              <button onclick="face('speaking')">🗣️</button>
+              <button onclick="face('alert')">⚠️</button>
+              <button onclick="face('success')">😄</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <h2>Status</h2>
+            <div id="status" class="kv"></div>
+          </div>
+          <div class="card">
+            <h2>Face state</h2>
+            <pre id="facestate"></pre>
+          </div>
+          <div class="card">
+            <h2>Safety</h2>
+            <pre id="safety"></pre>
+          </div>
+          <div class="card">
+            <h2>Logs</h2>
+            <div id="logs" class="logs"></div>
+          </div>
+          <div class="card">
+            <h2>AI Providers</h2>
+            <pre id="aiproviders"></pre>
+          </div>
+          <div class="card">
+            <button onclick="logout()">Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      const csrf = () => document.cookie.split('; ').find(x => x.startsWith('orion_csrf='))?.split('=')[1] || '';
+      
+      async function post(url, body = {}) {
+        let r = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-ORION-CSRF': decodeURIComponent(csrf())
+          },
+          body: JSON.stringify(body)
+        });
+        
+        if (!r.ok) alert(await r.text());
+        return r.json().catch(() => ({}));
+      }
+      
+      async function face(e) {
+        await post('/face/' + e);
+        load();
+      }
+      
+      async function snapshot() {
+        let r = await post('/snapshot');
+        alert(r.path || 'done');
+      }
+      
+      async function ai() {
+        let t = prompt('Command to ORION:');
+        if (t) {
+          let r = await post('/ai', { text: t });
+          alert(r.text || JSON.stringify(r));
+          load();
+        }
+      }
+      
+      async function load() {
+        try {
+          let [h, t, f, l, s, a] = await Promise.all([
+            fetch('/health').then(x => x.json()),
+            fetch('/telemetry').then(x => x.json()),
+            fetch('/face').then(x => x.json()),
+            fetch('/logs').then(x => x.json()),
+            fetch('/safety').then(x => x.json()),
+            fetch('/ai/providers').then(x => x.json())
+          ]);
+          
+          document.getElementById('status').innerHTML = `<span>Mode</span><b>${h.mode}</b><span>Lifecycle</span><b>${h.lifecycle}</b><span>Obstacles</span><b>${t.obstacles ?? 0}</b><span>Detections</span><b>${t.detections ?? 0}</b>`;
+          document.getElementById('facestate').textContent = JSON.stringify(f, null, 2);
+          document.getElementById('safety').textContent = JSON.stringify(s, null, 2);
+          document.getElementById('aiproviders').textContent = JSON.stringify(a, null, 2);
+          document.getElementById('face').src = '/face.svg?' + Date.now();
+          document.getElementById('logs').textContent = (l.lines || []).join('\n');
+          
+          let map = {
+            neutral: '😐',
+            happy: '😊',
+            sad: '😢',
+            angry: '😡',
+            surprised: '😮',
+            thinking: '🤔',
+            sleeping: '😴',
+            listening: '👂',
+            speaking: '🗣️',
+            alert: '⚠️',
+            success: '😄',
+            error: '❌',
+            curious: '🧐',
+            love: '😍',
+            boot: '🤖'
+          };
+          
+          document.getElementById('face').textContent = map[f.emotion] || '🙂';
+        } catch (e) {
+          // Empty catch block from original code
+        }
+      }
+      
+      function logout() {
+        fetch('/logout', {
+          method: 'POST',
+          headers: {
+            'X-ORION-CSRF': decodeURIComponent(csrf())
+          }
+        }).then(() => location = '/login');
+      }
+      
+      load();
+      setInterval(load, 2000);
+    </script>
+  </body>
+</html>
