@@ -76,5 +76,10 @@ So i started today with completing Lower base that i left yesterday lol, then af
 ## 04-10-2026 HTML website for using and loggin it 100% done
 
 Shalom! (saying this purposefully to raige bait some readers) Well Today what i did was quite amazing, i don't know if we have to write journal for Software part but uhh i thought i shoukd write it otherwise thungs would look confusing and kinda incomplete without wrirting for Software part. So well today what i did was that i completed web thing for rover, now what does this mean is that now using web we can basically kinda log on rover!! yes like this is a planed feature i just made the web things for now with some mock things lol, Now using web we can see through camera what rover is seeing, control via arrow keys to control it, control its faces and umm you can emotions ig? or mb face expressipn, anyways inlove controlling things :).  That's it for today, btw uhh you might think i didn't journal for last 2 days, but that's wrong i actually did, i just didn't commit thqg was my bad and also if you thing why journaling today took more time, then it took more time bcz i forgot to do Ctrl+S yester after writing journal so things vanished and i have to re-write yesterday's Things. Alr bye....
-**Total time spent: 2 Hours 30 Minutes*
+
+**Total time spent: 2 Hours 30 Minutes**
+
+## 13-11-2026 Assembly Made
+
+Alright so i opened project after a whole month and alot happened in last 1 month first of all i did this bcz reviewer asked me to do changes in README and some changes in cad file type so yea i did, anyways,so i did a little changes in lower base the i had to do 130 * 170 but i did 170 * 130 uk so i positions wheel motor holder as per that so i just changed dimensions lol and increased spacing between them and then i assembled them and yea i also decreased size of wheels bcz i thought 
 

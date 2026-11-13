@@ -1,52 +1,33 @@
 # Rover: Orion
 
 **Orion** is an AI-Powered rover built for exploration, robotics, ane mainly for Funn!!!
-
-This is a group project made by:
-- **Krish** designed the 3D body and mechanical parts (**CAD** & **Web UI**).
-- **Shaurya** designed the custom brain and electronics (**GREG SBC & Motor Driver**).
- **Electronics Repository (GREG):** [github.com/GoTouchGra55/GREG](https://github.com/GoTouchGra55/GREG)  
- **CAD Repository (Orion Rover):** [github.com/unknowngamer69/Orion-Rover](https://github.com/unknowngamer69/Orion-Rover)
-
+![Orion Image](https://cdn.hackclub.com/01a1d407-dc29-7359-b8d8-0c4ef0f3f68b/image.png)
 ---
 
-## What We Have Built So Far (CAD, Body & Software)
+## Its Features (CAD, Body & Software)
 
-The **V1 CAD design is now 100% complete! yay** The outer shell and structural parts of the rover are divided into these sections:
+The V1 CAD design is now 100% complete! yay, the outer shell and all cad parts of the rover are divided into these parts:
 
-### 1. Main Base & Internal Floors
-The Main Base is the main body of the rover(obviously) that holds the electronics, screen, lights, and sensors.
-- **Cool Shape & Smooth Edges:** Designed using chamfers and fillets for a clean, cool look.
-- **2 Floor System:** The inside is divided into two floors. **Floor 1** is fixed on lower chamfers and will hold a large, powerful battery and main components and PCB, **Floor 2** has side support structures to hold the Top electronics part. Both floors has circular cutouts for easy wire routing.
-- **Sensors & Cameras:** Includes cutouts for down-faced 2MP cameras (front & rear) and distance sensors (ToF) on the corners to prevent falling or crashinh into walls and objects.
-- **5-Inch Screen Mount:** Holds a 5" non-touch LCD screen on the body.
-- **Lighting System:** Cutouts for 2 front lights and 2 bottom lights at front and back 6 lighgs jn totoal and 1 light extra near camera.
-- **Cooling Fan:** A dedicated mounting spot for a cooling fan to keep the internals from overheating.
+### 1. Main Base & Internal Floors:
+The Main Base is the main body of the rover(obviously) that holds the electronics, screen, lights, and sensors. It has floors in it to keep various things seprate, Mounts and holes for various sensors and cameras and lights and cooling fan and a screen.
 
 ### 2. Main-Top (Lid)
-The top cover encloses the rover and has crucial sensory and audio sensors.
-- **LiDAR Mount:** A cutout and screw-nut mounting system for a LiDAR sensor that sits exposed on top of the rover.
-- **Spatial Audio (4 Mics):** This has four small microphones (one on each side) to accurately detect the direction of voice commands.
-- **Stereo Speakers:** Includes Left and Right speaker cutouts with internal support structures for audio.
+The top cover encloses the rover and has crucial sensory and audio sensors. It has holes and mounts for speakers, mic and LiDAR.
 
 ### 3. Lower Base & Wheels
-The Lower Base is screwed underneath the Main Base and handles movement.
-- **Motor Mounts:** Has simplified, strong structural holders for DC motors, 2 on both sides.
-- **Custom Wheels:** Uniquely designed curved wheels having a custom blended 3D shape with triangular cutout for aesthetics and weight reduction.
-- **Clean Wiring & Assembly:** Includes holes for passing motor wires up into the Main Base and screw mounts to fix the Upper and Lower bases together.
+The Lower Base is screwed underneath the Main Base and handles movement. It has mounts and holes for motors and we made wheels for it as well with holes for wire passing.
 
 ### 4. Top Camera Mount
-- Holds the primary USB camera angled upward (for seeing faces of ita handsome creators lol) and a night light above it, with wires hidden inside its internal part.
+Holds the primary USB camera angled upward (for seeing faces of its handsome creators lol) and a night light above it, with wires hidden inside its internal part.
 
 ### 5. Web Interface (Software)
-- **HTML Web App:** A browser-based control panel to log into the rover.
-- **Features:** Live camera feed viewing, remote movement control via arrow keys, and the ability to change the rover's digital face/emotions on the screen.
+A browser-based control panel to log into the rover. It has features of Live camera feed viewing, remote movement control via arrow keys, and the ability to change the rover's digital face/emotions on the screen.
 
 ---
 
-## Electronics: Meet GREG
+## Electronics- GREG
 
-The rover is powered by **GREG**, a custom Single Board Computer (SBC) and Motor Driver system designed from scratch by Shaurya.
+The rover has GREG, a custom Single Board Computer (SBC) and Motor Driver system designed from scratch by Shaurya.
 
 ### Main Computer (GREG SBC)
 - **Processor (SoC):** Allwinner T527
@@ -62,21 +43,6 @@ The rover is powered by **GREG**, a custom Single Board Computer (SBC) and Motor
 - **Microcontroller (MCU):** STM32G4
 - **Motor Drivers:** 3× DRV8262
 - **Motors:** Supports 6× brushed DC motors with built-in encoders
-
----
-
-##  To-Do next:
-
-- [x] Main Base CAD Design
-- [x] Lower Base & Motor Mounts CAD Design
-- [x] Top Camera Mount CAD Design
-- [x] Wheels & Main-Top (Lid) CAD Design
-- [x] Internal Compartments (Battery & Electronics Floors)
-- [x] GREG SBC & Motor Driver Schematics
-- [x] Initial Web UI (Camera, Movement, Emotion Control)
-- [ ] PCB Routing for GREG
-- [ ] Physical Assembly & Printing
-- [ ] Full Autonomous Navigation Software
 
 ---
 
